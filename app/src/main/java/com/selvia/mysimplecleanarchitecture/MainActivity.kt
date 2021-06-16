@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val viewModel = ViewModelProvider(this, factory)[MainViewModel::class.java]
 
 
-        viewModel.setName("Selvia In")
+        viewModel.setName("Selvia Indriani")
         viewModel.message.observe(this, {
             binding.tvWelcome.text = it.welcomMessage
         })
